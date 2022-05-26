@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<title> Guitarnauts - Negozio di strumenti musicali a Pescara </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+p{font-size:20px;}
+img{height:1080px;}
+</style>
+<body>
+
+<nav class="w3-bar w3-black">
+  <a name="home" href="#home" class="w3-button w3-bar-item">Home</a>
+  <a name="elettriche" href="#elettriche" class="w3-button w3-bar-item">Chitarre Elettriche</a>
+  <a name="acustiche" href="#acustiche" class="w3-button w3-bar-item">Chitarre Acustiche</a>
+  <a name="classiche" href="#classiche" class="w3-button w3-bar-item">Chitarre Classiche</a>
+  <a class="w3-button w3-bar-item w3-right">Login<a>
+</nav>
+
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">GuitarNauts</h2> 
+  <p class="w3-opacity"><i>Immergiti nella musica</i></p>
+</section>
+
+<section>
+  <img class="mySlides" src="https://bit.ly/3NypRv6"
+  style="width:100%">
+  <img class="mySlides" src="https://bit.ly/3PLwcoK"
+  style="width:100%">
+  <img class="mySlides" src="https://bit.ly/3wKcH8O"
+  style="width:100%">
+  <img class="mySlides" src="https://bit.ly/38MdrkK"
+  style="width:100%">
+  <img class="mySlides" src="https://bit.ly/3GiOqKc"
+  style="width:100%">
+</section>
+<section class="w3-center w3-content">
+	<br>
+	<h2>Chi Siamo</h2>
+	<p> GuitarNauts è il nostro negozio di strumenti e accessori musicali specializzato in chitarre. Puoi trovare il nostro negozio a Pescara,
+		al civico 201 di Via Gabriele D'Annunzio e toccare con mano la qualità dei nostri prodotti. In negozio troverai chitarre di tutte le categorie,
+		amplificatori, custodie, pezzi di ricambio, plettri, prodotti per la pulizia della tua chitarra e molto altro, altrimenti puoi
+		consultare la selezione delle nostre chitarre online per provarle in seguito di persona o fartele comodamente arrivare a casa. </p> <br> <br> <br> <br> <br>
+
+</section>
+
+ <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contattaci</h4>
+        <p>Qualche domanda? Scrivici pure.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nome" name="Nome" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Oggetto" name="Oggetto" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Messaggio" name="Messaggio" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Invia</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>Info</h4>
+        <p><a href="#">Stiamo assumendo</a></p>
+        <p><a href="#">Supporto</a></p>
+        <p><a href="#">Trova il negozio</a></p>
+        <p><a href="#">Spedizioni</a></p>
+        <p><a href="#">Pagamento</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Resi</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Contatti</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Via Gabriele D'Annunzio, 4</p>
+        <p><i class="fa fa-fw fa-phone"></i> 3497172269</p>
+        <p><i class="fa fa-fw fa-envelope"></i> guitarnauts@gmail.com</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+<!-- Per lo slideshow delle immagini -->
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+</body>
+</html>
+
